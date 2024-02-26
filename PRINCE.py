@@ -1,9 +1,9 @@
 import os, sys, uuid, re, random, time, string, json,base64
 from io import BytesIO
 try:
-	
-	os.system('pip uninstall requests chardet urllib3 idna certifi -y;pip install chardet urllib3 idna certifi requests')
-	import requests, rich,certifi,pycurl
+    
+    os.system('pip uninstall requests chardet urllib3 idna certifi -y;pip install chardet urllib3 idna certifi requests')
+    import requests, rich,certifi,pycurl
 except:
     os.system("git pull")
     
@@ -126,7 +126,7 @@ for brand in range(1000):
     d= str(random.randint(10,20))
     abc = a+b+c
     if not os.path.exists('device_info.txt'):
-    	 info()
+         info()
     else:
         infos = open('device_info.txt', 'r').read()
         version_, model_, brand_name_, width_, height_ = infos.split('$')
@@ -474,9 +474,9 @@ def ran():
     else:
         fb = "m"
     if meth in ["1", "a", "A"]:
-    	mw = 30
+        mw = 30
     else:
-    	mw = 90
+        mw = 90
     with ThreadPool(max_workers=mw) as heron:
         sort.clear()
         sort.logo()
@@ -665,7 +665,7 @@ def approve():
         sys.exit("[!!] Internet Error...")
     
     if showkey in datax:
-    	
+        
         print("Checking Subscription")
         time.sleep(3)
         main()
